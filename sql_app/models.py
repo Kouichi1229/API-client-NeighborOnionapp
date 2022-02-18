@@ -7,7 +7,7 @@ class User(Base):
     __tablename__ = 'users'
     
     p_id = Column(Integer, primary_key=True, index=True)
-    temp = Column(String, unique=True, index=True)
+    temp = Column(String)
     rain = Column(String)
     #time = Column(DateTime, nullable=False)
 
