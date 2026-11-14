@@ -41,7 +41,7 @@
 2. Booking 外鍵設定 `ondelete='SET NULL'`，但欄位同時設定 `nullable=False`，兩者的資料完整性語意不一致。
 3. CORS allowlist 目前列出 localhost origins，沒有看到正式前端網域設定。
 4. 管理端 Streamlit Repository 目前只呼叫 plant 與 aler endpoints，沒有串接 bookings。
-5. Repository 追蹤了 SQLite 資料庫檔案 `sql_app.db`。資料庫可能包含實際輸入紀錄或識別資料，應在公開分享前確認內容及是否適合公開。
+5. Repository 追蹤了 SQLite 資料庫檔案 `sql_app.db`。依專案用途背景，這個資料庫應是供人工資料輸入流程使用的資料儲存檔，而非單純為測試而建立的空資料庫；但目前沒有檢視資料內容，因此無法確認實際紀錄的來源、真實性或是否包含個人資料。
 6. Repository 追蹤多個 `__pycache__` 編譯檔，屬於可由原始碼重新產生的環境產物；本次僅記錄，沒有刪除原始檔案。
 
 ## 與其他 Repository 的關係
